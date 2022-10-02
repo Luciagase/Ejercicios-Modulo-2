@@ -30,7 +30,9 @@ print("{:09.3f}".format(num_3))
 
 #3) Vamos a ponernos creativos. ¿Cuántas formas tienes de mostrar esta información?La altura es de 1,80 metros y el peso es de 80,135 KG
 
-altura=float(input('Elije una unidad  '))
-peso=float(input('Peso en kg: '))
-
-print()
+altura=float(input('Indica tu altura en metros (sin 0 a la izquierda): '))
+print('En dam son casi '"{:01.0f}".format(altura))
+print('En mm son '"{:04.3f}".format(altura))
+peso=float(input('Indica tu peso en kilogramos: '))
+peso=peso*1000
+print('En gramos pesas '"{:5.0f}".format(peso))
